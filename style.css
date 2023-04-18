@@ -1,0 +1,131 @@
+/* TODO: inserite il CSS necessario per completare il MHW! */
+
+
+/*GRIGLIA E MOBILE*/
+.choice-grid {
+
+    display: flex;
+    align-content: space-between;   /* lungo l'asse y dato che la direzione è per riga*/
+    justify-content: space-between; /* lungo l'asse x dato che la direzione è per riga*/
+    flex-wrap: wrap;
+    margin-top: 20px;
+
+}
+
+.choice-grid .all{
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+    height: 252.5px;
+    margin-bottom: 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #dcdcdc;
+    box-sizing:border-box;
+    padding: 10px;
+
+}
+
+.choice-grid .chosen {
+
+    background-color: #cfe3ff;
+}
+
+.choice-grid .no-chosen {
+
+    background-color: #f4f4f4;
+    opacity: 0.6;
+}
+
+.random{
+    height: 100%;
+    width: 100%;
+}
+
+#choice{
+    background-color: #ffee00;
+    font-size: 20px;
+    margin-bottom : 20px;
+    border-radius: 30%;
+    border: 4px solid green;
+    height: 40px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media (max-width: 700px){
+    
+    header div span {
+        display: none;
+    }
+
+    body {
+         width: 95%;
+    }
+
+}
+
+@media (max-width: 500px){
+    
+    .choice-grid .all {
+        width:49%;
+        height: calc(49vh + 25px);
+    }
+
+}
+
+/*FINE GRIGLIA E MOBILE*/
+.padding {
+    
+    padding: 20px;
+}
+#result {
+
+    display :flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    background-color: lightseagreen;
+    
+}
+.question-name {
+    background-image: url('./images/bck1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+p {
+
+    margin-top: 18px;
+    margin-bottom: 18px;
+    background-color: white;
+    
+}
+#restart {
+
+    text-align:center;
+    background-color: #cecece;
+    height: 50px;
+    border: 2px solid  cyan;
+    width: 100%;
+}
+
+#title{
+    background-color: white;
+    text-align: center;
+}
+
+
+#restart:hover{
+    background-color: #e0e0e0;
+    
+}
+
+#choice:hover{
+    background-color: greenyellow;   
+}
+
+
